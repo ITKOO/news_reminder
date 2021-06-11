@@ -3,8 +3,8 @@ import requests
 from bs4 import BeautifulSoup
 from module import Util
 from config import Config
-from model import News
-from model import NewsCategory
+from db.model import News
+from db.model import NewsCategory
 from db.dao import NewsCategoryDAO
 from db.dao import NewsDAO
 
