@@ -13,6 +13,8 @@ self.DB_HOST = 'host'
 self.DB_USER = 'user_name'
 self.DB_PASSWORD = 'password'
 self.DB_NAME = 'db_name'
+self.MAIL_SENDER = 'gmail account'
+self.MAIL_APP_KEY = 'gmail mail app key'
  ```
 2. 해당 디비에서 news, news_category table을 생성해줍니다.
 ``` 
