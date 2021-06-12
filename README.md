@@ -14,6 +14,31 @@ self.DB_USER = 'user_name'
 self.DB_PASSWORD = 'password'
 self.DB_NAME = 'db_name'
  ```
+2. 해당 디비에서 news, news_category table을 생성해줍니다.
+``` 
+create table news
+(
+    id             int auto_increment
+        primary key,
+    published_date date        not null,
+    platform_name  varchar(50) null,
+    category_name  varchar(50) not null,
+    title          text        null,
+    url            text        null,
+    created_at     int         null
+);
+
+create table news_category
+(
+    id         int auto_increment
+        primary key,
+    name       varchar(50)          null,
+    is_use     tinyint(1) default 1 null,
+    url        text                 null,
+    created_at int                  null
+);
+``` 
+
 
 <br>
  
@@ -30,4 +55,5 @@ python main.py
 <br><br>
 
 * 실행결과
-
+<img width="804" alt="스크린샷 2021-06-12 오후 5 15 34" src="https://user-images.githubusercontent.com/31758135/121770027-efe70500-cba1-11eb-82fe-5a10dd488750.png">
+<img width="500" src="https://user-images.githubusercontent.com/31758135/121770057-1e64e000-cba2-11eb-8317-cf9809dd19f0.png">
