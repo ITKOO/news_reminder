@@ -38,13 +38,13 @@ class Crawling:
       category_name = category_name.replace(' ', '')
       category_url = category_info.find('a').get('href')
 
-      if category_name in self.config.CATEGORY_USE_LIST:
-        is_use = 1
-
       if 'http' not in category_url:
         category_url = self.config.NAVER_NEWS_DOMAIN + category_url
 
-      category_url_dictionary[category_name] = category_url
+      if category_name in self.config.CATEGORY_USE_LIST:
+        is_use = 1
+        category_url_dictionary[category_name] = category_url
+
       self.save_news_category(category_name, category_url, is_use)
 
     return category_url_dictionary

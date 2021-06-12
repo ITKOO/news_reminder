@@ -7,7 +7,6 @@ class NewsDAO(MysqlController):
     sql = 'INSERT INTO news (published_date, platform_name, category_name, title, url, created_at) VALUES (' + \
         news.to_sql_str() + ')'
 
-    print(sql)
     self.cursor.execute(sql)
     self.connection.commit()
 
