@@ -8,4 +8,6 @@ class Config:
     self.DB_USER = 'user'
     self.DB_PASSWORD = 'password'
     self.DB_NAME = 'db_name'
-    self.CATEGORY_USE_LIST = ['정치', '생활', '많이본', '경제', 'IT', '사회', '세계', '연예']
+    self.CATEGORY_USE_LIST = ['정치', '생활', '경제', 'IT', '사회', '세계']
+    self.MAIL_SENDER = 'gmail account'
+    self.MAIL_APP_KEY = 'gmail mail app key'
